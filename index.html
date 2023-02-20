@@ -1,0 +1,230 @@
+<div>
+    <!DOCTYPE html>
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Udemig</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    </head>
+    <style>
+        .card{
+            transition: all 0.5s;
+        }
+        .card:hover{
+            transform: translate(10px,-10px);
+            box-shadow: 2px 2px 20px  black;
+            transition: all 0.5s;
+        }
+        .btn:hover{
+          transform: scale(1.05);
+          background-color: crimson;
+          border-radius: 50px;
+          transition: all 0.4s;
+        }
+    </style>
+    <body>
+        <!--HEADER-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-1" href="/index.html"> <img style="width:50px;" src="/img/Udemig.png"
+                        alt="Alternate Text" /> UDEMİG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÜ</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Anasayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/egitimler.html">Eğitimlerimiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/iletisim.html">İletişim</a>
+                            </li>
+
+
+                        </ul>
+                        <div class="btn-group">
+
+                            <a class="btn btn-info" href="/kaydol.html">Kaydol</a>
+                            <a class="btn btn-success" href="/kaydol.html">Giriş Yap</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--! ANA İÇERİK-->
+
+        <div class="container my-5">
+            <div class="row border rounded-3 shadow-lg p-4">
+                <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+                    <h1 class="fw-bold text-capitalize">Yazılım Öğrenmek İstiyorsanız Doğru Yerdesiniz</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin felis
+                        arcu, ut euismod felis accumsan sed. Quisque porta in lacus vitae facilisis. Cras luctus lectus
+                        at augue euismod vestibulum.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-flex align-items-center justify-content-center">
+                    <img class="rounded-3 w-100" src="/img/banner.png" alt="Alternate Text" />
+                </div>
+            </div>
+        </div>
+        <!--! KARTLAR-->
+        <div class="row justify-content-center gap-5 my-5">
+            <!--! KART BAŞLANGIÇ-->
+            <div class="card" style="width: 18rem;">
+                <img src="/img/front-end.jpg" class="card-img-top py-5" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Front End</h5>
+                    <p class="card-text">Donec aliquet rhoncus luctus. In id facilisis felis. Integer tempus eros in
+                        felis finibus, quis cursus nibh consequat.</p>
+                    <a href="#" class="btn btn-primary">Detaylı Bilgi</a>
+                </div>
+            </div>
+            <!--!Kart Bitiş-->
+            <!--! KART BAŞLANGIÇ-->
+            <div class="card" style="width: 18rem;">
+                <img src="/img/quality.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Quality Assurance</h5>
+                    <p class="card-text">Donec aliquet rhoncus luctus. In id facilisis felis. Integer tempus eros in
+                        felis finibus, quis cursus nibh consequat.</p>
+                    <a href="#" class="btn btn-primary">Detaylı Bilgi</a>
+                </div>
+            </div>
+            <!--!Kart Bitiş-->
+            <!--! KART BAŞLANGIÇ-->
+            <div class="card" style="width: 18rem;">
+                <img src="/img/quality.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">React Native</h5>
+                    <p class="card-text">Donec aliquet rhoncus luctus. In id facilisis felis. Integer tempus eros in
+                        felis finibus, quis cursus nibh consequat.</p>
+                    <a href="#" class="btn btn-primary">Detaylı Bilgi</a>
+                </div>
+            </div>
+            <!--!Kart Bitiş-->
+        </div>
+
+        <!--todo list NEYİ AMAÇLIYORUZ-->
+        <div class="bg-black text-light rounded shadow">
+            <div class="row text-center">
+                <h1>NEYİ AMAÇLIYORUZ</h1>
+            </div>
+
+            <div class="row text-center gap-1 justify-content-center p-4">
+                <!--ilk sütun-->
+                <div class="col bg-secondary border p-3 rounded">
+                    <h1 class="text-warning">Temel Beceriler</h1>
+                    <p class="lead">Nam efficitur congue neque ut dignissim. Vivamus nisl turpis, malesuada in est at,
+                        commodo congue nulla.Integer faucibus risus nisl, tempus feugiat diam semper ac. Interdum et malesuada
+                        fames ac ante ipsum primis in faucibus.Vivamus vehicula in turpis vitae consectetur. Maecenas
+                        justo ex, volutpat a nisi id, vehicula facilisis sem. Donec nec diam et sem rutrum consectetur
+                        ac id quam.</p>
+                </div>
+                <!--ilk sütun-->
+                <div class="col bg-secondary border p-3 rounded">
+                    <h1 class="text-warning">Gerçeğe Dayalı</h1>
+                    <p class="lead">Sed consequat justo a odio commodo, at porta magna tincidunt. Sed viverra odio eu
+                        est eleifend varius.Integer faucibus risus nisl, tempus feugiat diam semper ac. Interdum et malesuada
+                        fames ac ante ipsum primis in faucibus.Vivamus vehicula in turpis vitae consectetur. Maecenas
+                        justo ex, volutpat a nisi id, vehicula facilisis sem. Donec nec diam et sem rutrum consectetur
+                        ac id quam.</p>
+                </div>
+                <!--ilk sütun-->
+                <div class="col border rounded bg-secondary p-3">
+                    <h1 class="text-warning">İş Dünyası</h1>
+                    <p class="lead">Integer faucibus risus nisl, tempus feugiat diam semper ac. Interdum et malesuada
+                        fames ac ante ipsum primis in faucibus.Vivamus vehicula in turpis vitae consectetur. Maecenas
+                        justo ex, volutpat a nisi id, vehicula facilisis sem. Donec nec diam et sem rutrum consectetur
+                        ac id quam. Donec eget nunc pulvinar, pharetra lectus in, pulvinar nunc. Vestibulum et aliquet
+                        mi, rutrum mattis neque.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram" />
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook" />
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    </body>
+
+    </html>
+</div>
